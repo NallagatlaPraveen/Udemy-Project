@@ -1,0 +1,145 @@
+.assignments {
+  padding: 16px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Semester Tabs ── */
+.semester-tabs {
+  display: flex;
+  background: #0d1b4b;
+  border-radius: 14px;
+  padding: 6px 8px;
+  gap: 4px;
+}
+
+.sem-tab {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sem-tab:hover {
+  color: #f0a500;
+}
+
+.sem-tab.active {
+  color: #f0a500;
+  font-weight: 700;
+}
+
+/* ── Table ── */
+.assign-table {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.assign-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.assign-table thead tr {
+  border-bottom: 1px solid #e8eef4;
+}
+
+.assign-table th {
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  text-align: left;
+}
+
+.assign-table tbody tr {
+  border-bottom: 1px solid #e8eef4;
+}
+
+.assign-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.assign-table td {
+  padding: 16px 18px;
+  font-size: 14px;
+  color: #1a1a2e;
+}
+
+/* Checkbox */
+.check-cell {
+  width: 40px;
+}
+
+.checkbox {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.checkbox.checked {
+  background: #2ecc71;
+  color: white;
+}
+
+.checkbox.unchecked {
+  border: 2px solid #ccc;
+}
+
+/* Cells */
+.unit-cell    { font-weight: 600; width: 80px; }
+.subject-cell { color: #333; }
+.date-cell    { color: #555; font-size: 13px; }
+
+.status-cell  { text-align: right; }
+
+.status {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.submitted { color: #333;    }
+.status.late      { color: #e74c3c; }
+.status.pending   { color: #95a5a6; }
+
+/* ── Pagination ── */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 18px;
+  border-top: 1px solid #e8eef4;
+}
+
+.page-btn {
+  padding: 8px 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.2s;
+  margin-left: 8px;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #f0f4f8;
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

@@ -1,0 +1,35 @@
+.course-cards-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.course-card {
+  flex: 1;
+  background: #1a5c6e;
+  border-radius: 14px;
+  padding: 16px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.course-icon {
+  font-size: 28px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.course-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.course-code {
+  font-size: 11px;
+  opacity: 0.85;
+}

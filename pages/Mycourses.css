@@ -1,0 +1,174 @@
+.mycourses {
+  padding: 16px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-cards-row {
+  display: flex;
+  gap: 16px;
+}
+
+.course-card {
+  flex: 1;
+  background: #1a5c6e;
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.course-card:hover {
+  background: #1d6e84;
+}
+
+.course-icon {
+  font-size: 26px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.course-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.course-code {
+  font-size: 11px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.semester-tabs {
+  display: flex;
+  background: #0d1b4b;
+  border-radius: 14px;
+  padding: 6px 8px;
+  gap: 4px;
+}
+
+.sem-tab {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sem-tab:hover {
+  color: #f0a500;
+}
+
+.sem-tab.active {
+  background: transparent;
+  color: #f0a500;
+  font-weight: 700;
+}
+
+.module-table {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.module-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.module-table tr {
+  border-bottom: 1px solid #e8eef4;
+}
+
+.module-table tr:last-child {
+  border-bottom: none;
+}
+
+.module-table td {
+  padding: 16px 18px;
+  font-size: 14px;
+  color: #1a1a2e;
+}
+
+.check-cell {
+  width: 40px;
+}
+
+.checkbox {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background: #0d1b4b;
+  border-radius: 5px;
+  color: white;
+  font-size: 11px;
+  align-items: center;
+  justify-content: center;
+}
+
+.module-cell {
+  font-weight: 600;
+  width: 120px;
+}
+
+.subject-cell {
+  color: #333;
+}
+
+.unit-cell {
+  color: #555;
+}
+
+.status-cell {
+  text-align: right;
+}
+
+.status {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.completed { color: #2ecc71; }
+.status.ongoing   { color: #f39c12; }
+.status.pending   { color: #95a5a6; }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-top: 1px solid #e8eef4;
+}
+
+.page-btn {
+  padding: 8px 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #f0f4f8;
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

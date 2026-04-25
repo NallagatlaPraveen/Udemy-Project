@@ -1,0 +1,96 @@
+/* Notification Panel - slides in from the right */
+.notif-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 258px;
+  height: 100vh;
+  background: #fef9e7;
+  border-left: 1px solid #e8e0c8;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: -6px 0 24px rgba(0, 0, 0, 0.13);
+}
+
+.notif-panel.open {
+  transform: translateX(0);
+}
+
+/* Header */
+.notif-header {
+  padding: 18px 18px 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #6b5c2e;
+  border-bottom: 1px solid #e8e0c8;
+  text-align: center;
+  letter-spacing: 0.3px;
+  background: #fef9e7;
+}
+
+/* Scrollable list */
+.notif-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+
+.notif-list::-webkit-scrollbar {
+  width: 3px;
+}
+
+.notif-list::-webkit-scrollbar-thumb {
+  background: #ddd5b0;
+  border-radius: 4px;
+}
+
+/* Each notification row */
+.notif-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #f0e8cc;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.notif-item:hover {
+  background: #fdf3cf;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+/* Avatar circle */
+.notif-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #e8e0c8;
+}
+
+/* Text content */
+.notif-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.notif-content p {
+  font-size: 11.5px;
+  color: #444;
+  line-height: 1.45;
+  margin: 0 0 5px;
+  word-break: break-word;
+}
+
+.notif-time {
+  font-size: 10px;
+  color: #a09060;
+}

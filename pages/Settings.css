@@ -1,0 +1,63 @@
+.settings-main {
+  flex: 1;
+  padding: 16px 28px 28px;
+}
+
+.settings-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  max-width: 520px;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.settings-row:last-child { border-bottom: none; }
+.settings-row:hover      { background: #f8f8f8; }
+
+.settings-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.settings-row-icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.settings-row-label {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #999;
+}
+
+.logout-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  color: #1c1c1c;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logout-box:hover { color: #e74c3c; }
+
+.logout-icon { font-size: 22px; }
